@@ -1,0 +1,64 @@
+body {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+}
+
+.main-nav .nav-pills {
+  background-color: #0d6efd;
+}
+.main-nav .nav-pills .nav-link {
+  color: #fff;
+  border-radius: 0;
+  padding: 12px;
+}
+.main-nav .nav-pills .nav-link.active {
+  background-color: #0a58ca;
+}
+
+.accordion-item h2 button {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.take-test {
+  position: relative;
+}
+.take-test .score {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 576px) {
+  .take-test .score {
+    right: -10px;
+  }
+
+  .mobile-login {
+    flex-direction: column;
+  }
+  .mobile-login form {
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+  }
+  .navbar-nav li {
+    flex: 1;
+    text-align: center;
+    margin-right: 5px;
+  }
+  .navbar-nav li .nav-link {
+    background-color: #e5e5e5;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

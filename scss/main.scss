@@ -1,0 +1,46 @@
+body {
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+}
+
+.main-nav {
+
+    .nav-pills {
+        background-color: #0d6efd;
+
+        .nav-link {
+            color: #fff;
+            border-radius: 0;
+            padding: 12px;
+        }
+
+        .nav-link.active {
+            background-color: #0a58ca;
+        }
+    }
+
+}
+
+.accordion-item {
+    h2 {
+      button{ font-weight: bold; font-size: 18px;}
+    }
+}
+
+.take-test {
+    position: relative;
+
+    .score {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+        padding: 20px;
+    }
+}
+
+// mobile media query 
+@import "mobile";

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light py-4">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><i class="bi bi-1-square-fill"></i> Landing Jupiter</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex ms-md-5 my-3 my-md-auto" role="search">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search topic"
+              />
+              <span class="input-group-text" id="basic-addon2"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </form>
+          <div class="ms-auto d-flex mobile-login">
+            <div class="d-flex me-md-5">
+              <input
+                type="text"
+                class="form-control form-control-sm me-2"
+                placeholder="userid"
+              />
+              <input
+                type="text"
+                class="form-control form-control-sm mr-2"
+                placeholder="pswd"
+              />
+            </div>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Register</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Signin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex flex-column main-nav mb-5">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            Maths
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            class="nav-link text-adrk"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            English
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            Physics
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills4-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills4"
+            type="button"
+            role="tab"
+            aria-controls="pills4"
+            aria-selected="false"
+          >
+            Chemistry
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills5-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills5"
+            type="button"
+            role="tab"
+            aria-controls="pills5"
+            aria-selected="false"
+          >
+            History
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills6-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills6"
+            type="button"
+            role="tab"
+            aria-controls="pills6"
+            aria-selected="false"
+          >
+            Geography
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills6-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills7"
+            type="button"
+            role="tab"
+            aria-controls="pills7"
+            aria-selected="false"
+          >
+            Civics
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content container mt-2 mt-md-3" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+          tabindex="0"
+        >
+          <select name="" class="form-control d-flex d-md-none">
+            <option>PRE-KG</option>
+            <option>KG</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+          <div
+            class="btn-group d-flex mx-auto bg-light d-none d-sm-flex"
+            role="group"
+            aria-label="Basic radio toggle button group"
+          >
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio1"
+              autocomplete="off"
+              checked
+            />
+            <label class="btn btn-outline-secondary" for="btnradio1"
+              >PRE-KG</label
+            >
+
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio2"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio2">KG</label>
+
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio3"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio2">1</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio3"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio3">2</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio4"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio4">3</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio5"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio5">4</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio6"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio6">5</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio7"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio7">6</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio8"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio8">7</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio9"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio9">8</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio10"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio10">A1</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio11"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio11">A2</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio12"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio12">G</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio13"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio13">PC</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio14"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-secondary" for="btnradio14">C</label>
+          </div>
+
+          <div class="container-fluid mt-2 mt-md-4">
+            <div class="row">
+              <div class="col-md-8 offset-md-2 mb-3 mt-3">
+                <nav
+                  style="--bs-breadcrumb-divider: '>'"
+                  aria-label="breadcrumb"
+                >
+                  <ol class="breadcrumb mb-3">
+                    <li class="breadcrumb-item">
+                      <a href="#">Fourth grade</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      <a href="#">Fractions</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      <a href="#"
+                        >Add or substract fractions with like denominators</a
+                      >
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Add fractions
+                    </li>
+                  </ol>
+                </nav>
+                <h3>Fourth grade Math: <span>Fractions</span></h3>
+              </div>
+              <div class="col-md-8 offset-md-2">
+                <ul class="list-group">
+                  <li
+                    class="list-group-item fw-bold fs-6 bg-primary text-white"
+                  >
+                    Add add and substract fractions with like denominator
+                  </li>
+                  <li class="list-group-item">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button
+                            class="accordion-button fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                          >
+                            Decompose fractions
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse show"
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <div
+                              class="text-section col-md-10 offset-md-1 py-4"
+                            >
+                              <div class="d-flex flex-column take-test">
+                                <div class="col-12">
+                                  <h4>Add</h4>
+                                </div>
+                                <div class="d-flex align-items-center fs-4">
+                                  <div class="col-auto">
+                                    2
+                                    <div class="line border-botom"></div>
+                                    7
+                                  </div>
+                                  <div class="col-auto px-3">+</div>
+                                  <div class="col-auto">
+                                    1
+                                    <div class="line border-botom"></div>
+                                    7
+                                  </div>
+                                  <div class="col-auto px-3">=</div>
+                                  <div class="col-auto">
+                                    <input
+                                      type="text"
+                                      class="form-control w-25 mb-1"
+                                    />
+                                    <div class="line"></div>
+                                    <input
+                                      type="text"
+                                      class="form-control w-25"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="d-flex my-3">
+                                  <button class="btn btn-primary">
+                                    submit
+                                  </button>
+                                </div>
+                                <div class="score bg-warning rounded">
+                                  <h4>Score</h4>
+
+                                  <p class="fs-3">0/15</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                          >
+                            Add fractions
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseTwo"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <strong
+                              >This is the second item's accordion body.</strong
+                            >
+                            It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                          >
+                            Substract fractions
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingThree"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <strong
+                              >This is the third item's accordion body.</strong
+                            >
+                            It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="list-group-item fw-bold fs-6 bg-primary text-white"
+                  >
+                    Add add and substract fractions with unlike denominator
+                  </li>
+                  <li class="list-group-item">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour"
+                            aria-expanded="false"
+                            aria-controls="collapseFour"
+                          >
+                            Decompose fractions
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseFour"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingFour"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <div
+                              class="text-section col-md-10 offset-md-1 py-4"
+                            >
+                              <div class="d-flex flex-column take-test">
+                                <div class="col-12">
+                                  <h4>Add</h4>
+                                </div>
+                                <div class="d-flex align-items-center fs-4">
+                                  <div class="col-auto">
+                                    2
+                                    <div class="line border-botom"></div>
+                                    7
+                                  </div>
+                                  <div class="col-auto px-3">+</div>
+                                  <div class="col-auto">
+                                    1
+                                    <div class="line border-botom"></div>
+                                    7
+                                  </div>
+                                  <div class="col-auto px-3">=</div>
+                                  <div class="col-auto">
+                                    <input
+                                      type="text"
+                                      class="form-control w-25 mb-1"
+                                    />
+                                    <div class="line"></div>
+                                    <input
+                                      type="text"
+                                      class="form-control w-25"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="d-flex my-3">
+                                  <button class="btn btn-primary">
+                                    submit
+                                  </button>
+                                </div>
+                                <div class="score bg-warning rounded">
+                                  <h4>Score</h4>
+
+                                  <p class="fs-3">0/15</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive"
+                            aria-expanded="false"
+                            aria-controls="collapseFive"
+                          >
+                            Add fractions
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseFive"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingFive"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <strong
+                              >This is the second item's accordion body.</strong
+                            >
+                            It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix"
+                            aria-expanded="false"
+                            aria-controls="collapseSix"
+                          >
+                            Substract fractions
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseSix"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingSix"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <strong
+                              >This is the third item's accordion body.</strong
+                            >
+                            It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          tabindex="0"
+        >
+          ...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-contact"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+          tabindex="0"
+        >
+          ...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills4"
+          role="tabpanel"
+          aria-labelledby="pills4-tab"
+          tabindex="0"
+        >
+          ...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills5"
+          role="tabpanel"
+          aria-labelledby="pills5-tab"
+          tabindex="0"
+        >
+          pills 4
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills6"
+          role="tabpanel"
+          aria-labelledby="pills6-tab"
+          tabindex="0"
+        >
+          <h1>pills 6</h1>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills7"
+          role="tabpanel"
+          aria-labelledby="pills7-tab"
+          tabindex="0"
+        >
+          <h1>pills 6</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer class="bg-dark">
+sa
+      </footer> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

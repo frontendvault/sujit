@@ -1,0 +1,31 @@
+@media (max-width: 576px) {
+
+    .take-test {
+        .score {
+            right: -10px;
+        }
+    }
+
+    .mobile-login {
+        flex-direction: column;
+
+        form {
+            margin-bottom: 10px;
+        }
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+
+        li {
+            flex: 1;
+            text-align: center; margin-right: 5px;
+
+            .nav-link {
+                background-color: #e5e5e5;
+            }
+        }
+    }
+}
